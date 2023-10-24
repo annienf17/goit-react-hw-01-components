@@ -1,4 +1,6 @@
+// default import 
 import { Profile } from 'components/Profile';
+// named import 
 import { Statistics } from 'components/Statistics';
 import user from '../json/user.json';
 import data from '../json/data.json';

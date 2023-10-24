@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
+// named import
 import { StatItems } from './StatItems';
 import css from '../css/Statistics.module.css';
 
+// named export
 export function Statistics({ title, stats }) {
   const statList = stats.map(stat => (
     <StatItems
@@ -9,6 +11,7 @@ export function Statistics({ title, stats }) {
       label={stat.label}
       percentage={stat.percentage}
     />
+    
   ));
   return (
     <section className={css.statistics}>
