@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import css from '../css/Statistics.module.css';
 
 
-
 export function StatItems({ label, percentage }) {
   return (
     <li className={css.item} style={{ backgroundColor: getRandomHexColor() }}>
@@ -11,6 +10,7 @@ export function StatItems({ label, percentage }) {
     </li>  
   );
 }
+
 function getRandomHexColor() {
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
