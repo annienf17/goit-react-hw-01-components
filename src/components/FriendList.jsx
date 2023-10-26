@@ -7,7 +7,7 @@ export function FriendList({ friends }) {
             <FriendListItem
               avatar={friend.avatar}
               name={friend.name}
-              isOnline={friend.isOnline}
+              status={friend.isOnline}
               key={friend.id}
             />
           ));
