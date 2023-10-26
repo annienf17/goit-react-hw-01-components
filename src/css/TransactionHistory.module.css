@@ -1,0 +1,25 @@
+.transaction-history {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(48, 48, 49, 0.1);
+    box-shadow: 2px 2px 2px 1px rgba(48, 48, 49, 0.4);  
+}
+.head {
+    background-color: rgb(4, 197, 245);
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;  
+}
+.head th {
+    padding: 2rem 6rem;
+}
+.body {
+    background-color: rgba(232, 233, 234, 0.6); 
+}
+.body:nth-child(even) {
+    background-color: rgba(204, 204, 205, 0.6);   
+}
+
+.body th {
+    padding: 1rem;
+    text-transform: capitalize;  
+}
