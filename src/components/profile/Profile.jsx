@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from '../css/Profile.module.css';
+import css from './Profile.module.css';
 
 // default export
 export function Profile ({ user }) {
@@ -35,7 +35,7 @@ export function Profile ({ user }) {
 };
    
 
-Profile.propTypes = {
+Profile.propTypes={
   user: PropTypes.shape({
     username: PropTypes.string,
     tag: PropTypes.string,

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatItems } from './StatItems';
-import css from '../css/Statistics.module.css';
+import css from './Statistics.module.css';
 
 
 export function Statistics({ title, stats }) {
@@ -20,7 +20,7 @@ export function Statistics({ title, stats }) {
   );
 }
 
-Statistics.propTypes = {
+Statistics.propTypes={
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({

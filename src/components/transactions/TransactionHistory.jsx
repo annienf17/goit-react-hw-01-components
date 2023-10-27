@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { TransactionList } from './TransactionList';
-import css from '../css/TransactionHistory.module.css';
+import css from './TransactionHistory.module.css';
 
 export function TransactionHistory({ items }) {
     const transactionList = items.map(item => (
@@ -25,7 +25,7 @@ export function TransactionHistory({ items }) {
       );
 }
 
-TransactionHistory.propTypes = {
+TransactionHistory.propTypes={
 items: PropTypes.arrayOf(
   PropTypes.shape({
     id: PropTypes.string,

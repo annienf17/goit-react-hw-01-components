@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from '../css/FriendList.module.css';
+import css from './FriendList.module.css';
 
 
 export function FriendListItem({ status, avatar, name }) {
@@ -7,13 +7,13 @@ const statusStage = status === true ? css.true : css.false
     return (
         <li className={css.item}>
         <span className={[css.status, statusStage].join(' ')}></span>{/* class="status true false" */}
-        <img className={css.avatar} src={avatar} alt={name} width="48" />
-        <p className={css.name}>{name}</p>
+        <img src={avatar} alt={name} width="48" />
+        <p>{name}</p>
       </li>
       );
 }
 
-  FriendListItem.propTypes = {
+  FriendListItem.propTypes={
     status: PropTypes.bool,
     avatar: PropTypes.string,
     name: PropTypes.string,

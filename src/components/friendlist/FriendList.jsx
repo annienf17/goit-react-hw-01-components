@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { FriendListItem } from './FriendListItem';
-import css from '../css/FriendList.module.css';
+import css from './FriendList.module.css';
 
 export function FriendList({ friends }) {
         const friendList = friends.map(friend => (
@@ -16,7 +16,7 @@ export function FriendList({ friends }) {
           );
   }
 
-  FriendList.propTypes = {
+  FriendList.propTypes={
     friends: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.number,

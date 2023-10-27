@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from '../css/TransactionHistory.module.css';
+import css from './TransactionHistory.module.css';
 
 export function TransactionList({ type, amount, currency }) { 
         return ( 
@@ -13,7 +13,7 @@ export function TransactionList({ type, amount, currency }) {
           );
     }
     
-    TransactionList.propTypes = {
+    TransactionList.propTypes={
         type: PropTypes.string,
         amount: PropTypes.string,
         currency: PropTypes.string,
